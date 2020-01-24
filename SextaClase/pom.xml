@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.educacionit</groupId>
 	<artifactId>SextaClase</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SextaClase Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -17,6 +17,21 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.mavens.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+					<configuration>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+			</plugin>
+		</plugins>
+	
 		<finalName>SextaClase</finalName>
 	</build>
+	
+	
+	
+	
 </project>
